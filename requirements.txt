@@ -1,0 +1,7 @@
+faicons
+plotly[express]
+polars
+pyarrow
+querychat
+shiny
+shinywidgets
