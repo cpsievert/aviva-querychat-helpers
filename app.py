@@ -8,13 +8,14 @@ from shiny.express import render, ui
 from shinywidgets import render_plotly
 
 # Keep tool results details collapsed by default.
-os.environ.setdefault("QUERYCHAT_TOOL_DETAILS", "collapsed")
+# os.environ.setdefault("QUERYCHAT_TOOL_DETAILS", "collapsed")
 
 # Initialize querychat
 qc = QueryChat(
     titanic(),
     "titanic",
-    client="openai/gpt-4.1"
+    client="openai/gpt-4.1",
+    tools=["update", "filter", "visualize"],
 )
 
 # Place sidebar chat component

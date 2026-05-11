@@ -2,6 +2,6 @@ faicons
 plotly[express]
 polars
 pyarrow
-querychat
+querychat[viz]
 shiny
 shinywidgets
